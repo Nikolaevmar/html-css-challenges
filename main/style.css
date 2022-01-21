@@ -1,0 +1,101 @@
+:root {
+  --primary-white: hsl(0, 0%, 100%);
+  --primary-black: hsl(0, 0%, 0%);
+  --primary-dark-gray: hsl(0, 0%, 55%);
+  --primary-very-dark-gray: hsl(0, 0%, 41%);
+  --font-alata: "Alata";
+  --font-josefin: "Josefin Sans";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/desktop/image-hero.jpg") no-repeat center/cover;
+}
+
+.items-wrapper {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  color: var(--primary-white);
+  font-family: var(--font-alata);
+  font-size: 15px;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.text-wrapper {
+  margin-top: 5em;
+  padding: 35px 25px 35px 45px;
+  width: 58%;
+  border: 2px solid var(--primary-white);
+}
+
+.text-wrapper h1 {
+  font-size: 4em;
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: var(--primary-white);
+  font-family: var(--font-josefin);
+}
+
+.showcase {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.showcase-text {
+  padding: 4em 1em 4em 6.5em;
+  background: var(--primary-white);
+  position: relative;
+  top: 125px;
+  right: 160px;
+}
+
+.showcase h1 {
+  margin-top: 1em;
+  font-size: 2.2em;
+  font-family: var(--font-josefin);
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 4px;
+}
+
+.showcase p {
+  margin-top: 1.5em;
+  color: var(--primary-dark-gray);
+  font-family: var(--font-alata);
+  font-size: 0.9em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
