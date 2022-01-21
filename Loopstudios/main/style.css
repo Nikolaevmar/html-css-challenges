@@ -13,6 +13,7 @@
   padding: 0;
 }
 
+/* Hero section */
 .container {
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -60,6 +61,7 @@
   font-family: var(--font-josefin);
 }
 
+/* Showcase section */
 .showcase {
   display: flex;
   align-items: center;
@@ -93,6 +95,7 @@
   font-size: 0.9em;
 }
 
+/* Grid items showcase */
 .showcase-grid {
   max-width: 1200px;
   margin: auto;
@@ -141,6 +144,7 @@
   padding: 0 0 40px 40px;
 }
 
+/* Footer section */
 .footer {
   display: flex;
   flex-direction: column;
@@ -193,7 +197,9 @@
   font-size: 11px;
   text-align: center;
   color: var(--primary-white);
+  margin-top: 3em;
 }
 .attribution a {
   color: var(--primary-white);
+  font-family: var(--font-alata);
 }
