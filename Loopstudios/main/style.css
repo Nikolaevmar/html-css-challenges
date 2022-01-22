@@ -278,3 +278,46 @@
   color: var(--primary-white);
   font-family: var(--font-alata);
 }
+
+/* Media queries */
+@media (max-width: 1024px) {
+  .text-wrapper h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-wrapper {
+    width: 75%;
+    margin: 5em auto;
+  }
+  .text-wrapper h1 {
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 560px) {
+  .text-wrapper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-wrapper {
+    width: 90%;
+    margin: 5em auto;
+  }
+  .text-wrapper h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-wrapper {
+    width: 90%;
+    margin: 5em auto;
+  }
+  .text-wrapper h1 {
+    font-size: 2em;
+  }
+}
