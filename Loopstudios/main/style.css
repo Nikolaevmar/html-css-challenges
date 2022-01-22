@@ -44,6 +44,24 @@
   padding: 10px;
   margin: 0 5px;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.navbar li:after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 20px;
+  background-color: var(--primary-white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navbar li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .text-wrapper {
@@ -144,6 +162,18 @@
   padding: 0 0 40px 40px;
 }
 
+.showcase-grid-header-button:hover {
+  background: var(--primary-black);
+  color: var(--primary-white);
+  transition: all 0.3s;
+}
+
+.grid-item-text:hover {
+  color: var(--primary-black);
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s;
+}
+
 /* Footer section */
 .footer {
   display: flex;
@@ -161,6 +191,7 @@
 
 .icon {
   margin-left: 1.2em;
+  cursor: pointer;
 }
 
 .footer-nav {
@@ -187,7 +218,28 @@
   padding: 10px;
   margin: 0 5px;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
 }
+
+.footer-nav li:after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 20px;
+  background-color: var(--primary-white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.footer-nav li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Attribution section */
 
 .copy {
   color: var(--primary-very-dark-gray);
