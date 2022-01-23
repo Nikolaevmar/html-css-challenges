@@ -178,6 +178,11 @@
   letter-spacing: 4px;
 }
 
+.showcase-img{
+  display: flex;
+  justify-content: center;
+}
+
 .showcase p {
   width: 415px;
   margin-top: 1.5em;
@@ -190,12 +195,14 @@
 .showcase-grid {
   max-width: 1200px;
   margin: 6em auto;
+  position: relative;
 }
 
 .showcase-grid-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .showcase-grid-header-title {
@@ -203,7 +210,6 @@
   font-family: var(--font-josefin);
   text-transform: uppercase;
   font-size: 2.5em;
-  margin: 0 auto;
 }
 
 .showcase-grid-header-button {
@@ -213,8 +219,16 @@
   border: 1.5px solid var(--primary-black);
   padding: 1em 3.5em 1em 3.5em;
   cursor: pointer;
-  margin: 3em auto;
   width: 190px;
+  position:absolute;
+  top: 0;
+  right: 3px;
+}
+
+.showcase-grid-header-button:hover {
+  background: var(--primary-black);
+  color: var(--primary-white);
+  transition: all 0.3s;
 }
 
 .showcase-grid-items {
@@ -300,12 +314,6 @@
   text-transform: uppercase;
   font-size: 1.5em;
   padding: 0 0 40px 40px;
-}
-
-.showcase-grid-header-button:hover {
-  background: var(--primary-black);
-  color: var(--primary-white);
-  transition: all 0.3s;
 }
 
 .grid-item-text:hover {
@@ -582,10 +590,23 @@ footer{
   .footer-right{
     text-align: center;
   }
+  .showcase-img img{
+    width: 90vw;
+  }
 }
 @media (max-width: 560px) {
   .text-wrapper {
     width: 85%;
+  }
+  .showcase-grid {
+    margin: 4em auto;
+  }
+  .showcase-grid-header-button{
+    position:static;
+    margin: 2em auto;
+  }
+  .showcase-grid-header-title{
+    margin: 0 auto;
   }
 }
 
@@ -597,6 +618,15 @@ footer{
   .text-wrapper h1 {
     font-size: 2.2em;
   }
+  .showcase p {
+    width: 325px;
+  }
+  .showcase-grid {
+    margin: 3em auto;
+  }
+  footer{
+    padding: 2em 0 0 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -606,5 +636,14 @@ footer{
   }
   .text-wrapper h1 {
     font-size: 2em;
+  }
+  .showcase-grid {
+    margin: 0em auto;
+  }
+  .showcase p {
+    width: 300px;
+  }
+  .showcase h1 {
+    font-size: 1.8em;
   }
 }
