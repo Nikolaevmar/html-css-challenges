@@ -26,8 +26,7 @@ body {
 
 .container {
   width: 680px;
-  height: 500px;
-  margin: 5em auto;
+  margin: 3em auto 0;
 }
 
 .header {
@@ -59,3 +58,35 @@ body {
   margin-left: 1em;
 }
 
+.search-bar input[type="text"] {
+  background-color: white;
+  background-image: url("./assets/icon-search.svg");
+  background-position: 4% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 23px 0 23px 75px;
+  margin-top: 3em;
+  border-radius: 12px;
+  border: 1px thin var(--primary-light-lightgray);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.search-bar input::placeholder {
+  font-size: 1.3em;
+  font-family: var(--font-spacemonoreg);
+}
+
+.search-bar .btn {
+  text-align: center;
+  position: relative;
+  bottom: 53px;
+  left: 575px;
+  width: 95px;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: var(--font-spacemonoreg);
+  background: var(--primary-light-blue);
+  color: var(--primary-light-white);
+}
