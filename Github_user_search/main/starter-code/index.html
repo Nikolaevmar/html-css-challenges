@@ -18,13 +18,13 @@
     <div class="header">
       <h1 class="title">devfinder</h1>
       <div class="mode-items">
-        <p>Dark</p>
-        <img src="./assets/icon-moon.svg" alt="">
+        <p class="mode-type">Dark</p>
+        <img class="icon" src="./assets/icon-moon.svg" onclick='changeImg()' alt="">
       </div>
     </div>
 
     <div class="search-bar">
-      <input type="text" placeholder="Search GitHub username...">
+      <input name='searchBar'type="text" placeholder="Search GitHub username...">
       <div class="btn">Search</div>
       <div class="no-result-msg"></div>
     </div>
@@ -84,11 +84,30 @@
     </div>
   </div>
   <script>
+    //Search bar js
     const searchBtn = document.querySelector('.btn');
     const resultMsg = document.querySelector('.no-result-msg');
     searchBtn.addEventListener('click', () => {
       resultMsg.innerText = 'No results'
     })
+    //Mode
+    const image = document.querySelector('.icon');
+    const modeType = document.querySelector('.mode-type');
+
+    image.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    })
+    function changeImg(){
+        if (image.src.match("./assets/icon-moon.svg")) {
+          image.src = "./assets/icon-sun.svg";
+          modeType.innerText = 'Ligth'
+        }
+        else {
+          image.src = "./assets/icon-moon.svg";
+          modeType.innerText = 'Dark'
+        }
+      }
+  
   </script>
 </body>
 </html>
