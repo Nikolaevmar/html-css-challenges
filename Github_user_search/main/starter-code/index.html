@@ -15,7 +15,6 @@
 </head>
 <body>
   <div class="container">
-
     <div class="header">
       <h1 class="title">devfinder</h1>
       <div class="mode-items">
@@ -27,6 +26,7 @@
     <div class="search-bar">
       <input type="text" placeholder="Search GitHub username...">
       <div class="btn">Search</div>
+      <div class="no-result-msg"></div>
     </div>
 
     <div class="main">
@@ -83,5 +83,12 @@
       </div>
     </div>
   </div>
+  <script>
+    const searchBtn = document.querySelector('.btn');
+    const resultMsg = document.querySelector('.no-result-msg');
+    searchBtn.addEventListener('click', () => {
+      resultMsg.innerText = 'No results'
+    })
+  </script>
 </body>
 </html>

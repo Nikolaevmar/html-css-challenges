@@ -32,6 +32,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -56,6 +57,11 @@ body {
   width: 20px;
   height: 20px;
   margin-left: 1em;
+  cursor: pointer;
+}
+
+.header .mode-items img:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(20%);
 }
 
 .search-bar input[type="text"] {
@@ -68,6 +74,7 @@ body {
   margin-top: 3em;
   border-radius: 12px;
   border: 1px thin var(--primary-light-lightgray);
+  font-family: var(--font-spacemonoreg);
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
 }
@@ -89,6 +96,16 @@ body {
   font-family: var(--font-spacemonoreg);
   background: var(--primary-light-blue);
   color: var(--primary-light-white);
+}
+
+.no-result-msg {
+  text-align: center;
+  position: relative;
+  bottom: 85px;
+  left: 170px;
+  font-family: var(--font-spacemonoreg);
+  color: red;
+  height: 0;
 }
 
 .main {
@@ -188,6 +205,11 @@ body {
 
 #twitter {
   filter: invert(100%) sepia(100%) saturate(0%);
+}
+
+#website h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .content-info .item h3 {
