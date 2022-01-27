@@ -236,13 +236,19 @@ body {
 @media (max-width: 375px) {
   .main {
     height: 100%;
-    width: 40%;
+    width: 45%;
+  }
+
+  .container h1 {
+    position: relative;
+    right: 240px;
   }
   .content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .content-left {
     width: 86%;
     margin-top: 2em;
