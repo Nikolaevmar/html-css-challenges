@@ -232,3 +232,45 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 375px) {
+  .main {
+    height: 100%;
+    width: 40%;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-left {
+    width: 86%;
+    margin-top: 2em;
+    padding: 0;
+  }
+
+  .total-right {
+    font-size: 2em;
+  }
+  .tip-right {
+    font-size: 2em;
+  }
+  .content-left .content-grid .grid-item {
+    width: 115px;
+    place-items: center;
+  }
+  .content-left input[type="text"] {
+    width: 75%;
+  }
+  .content-left .content-grid {
+    gap: 25px;
+  }
+  .content-right {
+    width: 60%;
+    margin-bottom: 2em;
+    margin-right: 2.5em;
+  }
+  .btn-reset {
+    margin-top: 2em;
+  }
+}
