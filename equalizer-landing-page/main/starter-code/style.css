@@ -50,7 +50,7 @@ body {
 .showcase-main {
   display: flex;
   justify-content: center;
-  margin: 8em auto;
+  margin: 11em auto;
   background: var(--primary-dark);
   background-image: url("./assets/bg-pattern-2.svg");
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@ body {
 
 .pricing h1 {
   font-size: 2.5em;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 .btn-ios {
@@ -145,4 +145,29 @@ body {
 .btn-android p {
   margin-left: 0.5em;
   color: var(--primary-dark);
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.showcase-footer {
+  max-width: 850px;
+  margin: 12em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socials {
+  display: flex;
+}
+
+.footer-text {
+  max-width: 350px;
+  margin-left: 5em;
+}
+
+.icon {
+  margin-left: 0.5em;
+  cursor: pointer;
 }
