@@ -1,0 +1,11 @@
+:root {
+  --primary-blue: rgb(102, 226, 220);
+  --primary-orange: rgb(250, 116, 83);
+  --primary-darkyellow: rgb(255, 185, 100);
+  --primary-white: rgb(252, 250, 249);
+  --primary-dark: rgb(25, 24, 38);
+
+  --primary-font: "IBM Plex Sans", sans-serif;
+}
+
+
