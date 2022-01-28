@@ -123,6 +123,10 @@ body {
   cursor: pointer;
 }
 
+.btn-ios:hover {
+  background: var(--primary-blue);
+}
+
 .btn-ios p {
   margin-left: 0.5em;
 }
@@ -140,6 +144,10 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: 0.5em;
+}
+
+.btn-android:hover {
+  background: var(--primary-darkyellow);
 }
 
 .btn-android p {
@@ -170,4 +178,9 @@ body {
 .icon {
   margin-left: 0.5em;
   cursor: pointer;
+  fill: #191826;
+}
+
+.icon:hover {
+  fill: var(--primary-darkyellow);
 }
