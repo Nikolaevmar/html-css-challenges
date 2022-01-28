@@ -8,4 +8,40 @@
   --primary-font: "IBM Plex Sans", sans-serif;
 }
 
+body {
+  font-family: var(--primary-font);
+  background: url("./assets/bg-main-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.showcase-hero {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.showcase-hero .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav img {
+  position: relative;
+  bottom: 40px;
+  left: 100px;
+}
+
+.main-content {
+  margin-top: 2em;
+}
+
+.main-content h1 {
+  font-size: 4em;
+  margin-top: 1.5em;
+  font-weight: bold;
+}
+
+.main-content .logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
