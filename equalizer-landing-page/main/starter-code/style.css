@@ -184,3 +184,54 @@ body {
 .icon:hover {
   fill: var(--primary-darkyellow);
 }
+
+@media (max-width: 864px) {
+  body {
+    background-image: url("./assets/bg-main-tablet.png");
+  }
+  .nav img {
+    height: 450px;
+    left: 35px;
+  }
+  .nav {
+    margin-left: 2em;
+  }
+  .footer-logo {
+    flex-direction: column;
+  }
+  .footer-logo svg {
+    margin: 0 0 2em 5em;
+  }
+  .footer-socials {
+    margin-right: 5em;
+  }
+}
+
+@media (max-width: 468px) {
+  .nav img {
+    width: 0;
+    height: 0;
+  }
+  .showcase-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .showcase-main img {
+    top: 130px;
+    left: 15px;
+  }
+  .showcase-main {
+    background-size: 16em;
+  }
+  .main-right-content {
+    top: 180px;
+    right: 50px;
+  }
+  .showcase-footer {
+    flex-direction: column;
+    margin-top: 28em;
+  }
+  .footer-socials {
+    margin: 2em 0 0 4.5em;
+  }
+}
