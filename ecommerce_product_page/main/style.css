@@ -1,0 +1,53 @@
+:root {
+    --orange: rgb(255,125,26);
+    --white: hsl(0, 0%, 100%)
+    --black: hsl(0, 0%, 0%)
+    --pale-orange: rgb(255,237,224);
+    --very-vark-blue: rgb(29,32,37);
+    --dark-grayish-blue: rgb(104,112,125);
+    --grayish-blue: rgb(182,187,200);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 120px;
+ border-bottom: 1px solid var(--grayish-blue);
+}
+
+
+.navbar-right{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right ul li{
+    margin-right: 1.6em;
+    color: var(--dark-grayish-blue)
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img{
+    margin-left: 2em;
+    width: 42px;
+    height: 42px;
+}
+
+.navbar ul{
+    display: flex;    
+    list-style: none;
+}
