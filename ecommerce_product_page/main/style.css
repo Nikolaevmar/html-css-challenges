@@ -2,7 +2,6 @@
     --orange: rgb(255,125,26);
     --white: hsl(0, 0%, 100%)
     --black: hsl(0, 0%, 0%)
-    --pale-orange: rgb(255,237,224);
     --very-vark-blue: rgb(29,32,37);
     --dark-grayish-blue: rgb(104,112,125);
     --grayish-blue: rgb(182,187,200);
@@ -100,4 +99,90 @@ body {
 
 .add-remove-items{
     margin-right: 1em;
+}
+
+.right-side {
+    margin: 4em 0 0 5em;
+}
+
+.right-side .title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--orange);
+    letter-spacing: 2px;
+}
+
+.right-side .title-secondary{
+    margin-top: 0.8em;
+    font-size: 2.6em;
+    font-weight: bold;
+}
+
+.right-side .description {
+    margin: 2em 0 2em 0;
+    color: var(--dark-grayish-blue);
+    width: 450px
+}
+
+.pricing {
+    align-items: center;
+    margin: 2em 0 0.5em 0;
+}
+
+.price{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.pricing .price-discount{
+    background: rgb(255,237,224);
+    padding: 5px;
+    border-radius: 8px;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.money-saved{
+    font-weight: bold;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.add-to-cart{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.add-remove-items{
+    padding: 10px;
+    width: 100px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(247,245,255);
+}
+
+.add-btn{
+    background: var(--orange);
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-btn svg{
+    fill: #fff;
+    margin-right: 0.5em;
+}
+
+.add-remove-items svg{
+    cursor: pointer;
 }
