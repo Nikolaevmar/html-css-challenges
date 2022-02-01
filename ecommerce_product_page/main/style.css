@@ -7,6 +7,10 @@
     --grayish-blue: rgb(182,187,200);
 }
 
+* {
+    box-sizing: border-box
+}
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
 }
@@ -34,6 +38,27 @@ body {
     margin-right: 1.6em;
     color: var(--dark-grayish-blue);
     cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-left ul li:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  top: 66px;
+  background-color: var(--orange);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-left ul li:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar-right{
@@ -46,6 +71,11 @@ body {
     width: 42px;
     height: 42px;
     cursor: pointer;
+}
+
+.navbar-right img:hover{
+   border: 2px solid var(--orange);
+   border-radius: 50%;
 }
 
 .navbar-right svg{
@@ -181,6 +211,10 @@ body {
 .add-btn svg{
     fill: #fff;
     margin-right: 0.5em;
+}
+
+.add-btn:hover{
+    opacity: 0.7;
 }
 
 .add-remove-items svg{
